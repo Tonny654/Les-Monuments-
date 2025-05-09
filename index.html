@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monuments de France</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Monuments de France</h1>
+
+  <section class="monuments">
+    <div class="monument" data-id="eiffel">
+      <img src="./assets/images/eiffel-tower-3349075_1280.jpg" alt="Tour Eiffel">
+      <button class="Btn">Tour Eiffel</button>
+    </div>
+    <div class="monument" data-id="notre-dame">
+      <img src="./assets/images/Notre_Dame.jpg" alt="Notre-Dame de Paris">
+      <button class="Btn">Notre-Dame de Paris</button>
+    </div>
+    <div class="monument" data-id="mont-saint-michel">
+      <img src="./assets/images/Mont Saint Michel.jpg" alt="Mont-Saint-Michel">
+      <button class="Btn">Mont-Saint-Michel</button>
+    </div>
+    <div class="monument" data-id="versailles">
+      <img src="./assets/images/Chateau_Versailles.jpg" alt="Château de Versailles">
+      <button class="Btn">Château de Versailles</button>
+    </div>
+  </section>
+
+  <section id="info-section" class="info-section hidden">
+    <div id="info-content"></div>
+    <div id="map-container">
+      <img id="map-image" src="./assets/png/Carte de France.png" alt="Carte de France">
+      <div id="marker"></div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Monuments de France. Tous droits réservés Tonny.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

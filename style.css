@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-image: url(./assets/images/marble-1133981_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .monuments {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .monument {
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .monument img {
+    width: 100%;
+    border-radius: 10px;
+    height: 280px;
+
+  }
+  
+  .info-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 2px solid #ccc;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease;
+  }
+  
+  .info-section.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  #map-container {
+    position: relative;
+    margin-top: 1rem;
+  }
+  
+  #map-image {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Btn {
+    background: #333;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .Btn:hover {
+    background: red;
+    transform: translateY(-10px);
+    transition: 0.7s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+  }
+
+  .monument img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+    filter: grayscale(100%);
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  footer:hover {
+    transform: translateY(-10px);
+    transition: 0.7s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+  }
+
+  /* Mode Responsive */
+
+  @media screen and (max-width: 768px) {
+    .monuments {
+      flex-direction: column;
+      align-items: center;
+    }
+    .monument {
+      width: 80%;
+    }
+  }
+  
+  
